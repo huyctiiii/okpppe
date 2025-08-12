@@ -22,7 +22,7 @@ const firebaseConfig = {
         const user = result.user;
         console.log("User signed in:", user);
         alert("Login successful with Google");
-        window.location.href = "../page/index.html";
+        window.location.href = "./page/index.html";
       })
       .catch((error) => {
         console.error("Error signing in:", error);
@@ -38,7 +38,7 @@ function login() {
   for (let i = 0; i < users.length; i++) {
     if (username === users[i].username && password === users[i].password) {
       alert("Login successful");
-      window.location.href = "../page/index.html";
+      window.location.href = "./page/index.html";
       return;
     }
   }
