@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>mind x project </title>
+        <link rel="stylesheet" href="../CSS/app.css">
+        <script src="./javascript/app.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+      <div class="top-bar">
+        <div class="container">
+            <div class="row center-row">
+                <div class="col">
+                    <div class="box">
+                        <div class="container-3">
+                            <span class="icon"><i class="fa fa-search"></i><img src="../uploads/magnifying-glass.png"  width="20" height="20"></span>
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="../uploads/z5994477019772_6151d471891ab18f888035668033b5a6.jpg" alt="Image" style="display: block; margin: auto; transform: scale(0.7);" />
+                </div>
+                <div class="col">
+                    <span class="right-col">
+                        <button><img src="../uploads/heart.png"></button>
+                        <button><img src="../uploads/user.png"></button>
+                        <button><img src="../uploads/shopping-cart.png"></button>
+        
+            
+            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="mh.html">THÔNG TIN LIÊN LẠC</a>
+      
+        <a href="end.html">SỰ KIỆN</a>
+        <a href="end.html">TIN TỨC</a>
+        <a href="end.html">ODER SỚM</a>
+    </div>
+        <div class="form-mua-hang" >
+            <div class="box-mua-hang">
+              <div class="title"><h1>Điền Thông Tin Để Mua Hàng</h1></div>
+              <form id="form-mua" action="https://formsubmit.co/minhhuy123406@gmail.com" method="POST">
+                <label><h3>TÊN:</h3></label>
+                <input type="text" id="ten" name="TÊN" style="width: 300px; height: 40px;"><br>
+
+                <label><h3>SDT</h3></label>
+                <input type="text" id="sdt" name="SĐT" style="width: 300px; height: 40px;"><br>
+
+                <label><h3>ĐỊA CHỈ</h3></label>
+                <input type="text" id="diachi" name="ĐỊA CHỈ" style="width: 300px; height: 40px;"><br>
+
+                <label><h3>SỐ LƯỢNG</h3></label>
+                <input type="text" id="sl" name="sl" style="width: 300px; height: 40px;"><br>
+
+                <label><h3>NOTE</h3></label>
+                <input type="text" id="note" name="GHI CHÚ" style="width: 300px; height: 40px;"><br>
+                
+                <button id="btn"type="submit">Mua Hàng</button>
+                
+                <p id="thongbao"></p>
+              </form>
+                
+   
+              
+
+            </div>
+          
+          </div>
+          <script type="module" src="mh.js"></script>
+          <script>
+            var tenSanPham = document.getElementById("name")?.textContent || "";
+          </script>
+          
+    </body>
+</html>

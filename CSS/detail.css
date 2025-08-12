@@ -1,0 +1,226 @@
+body {
+    background: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.product-detail-wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    gap: 40px;
+}
+
+.product-images {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-images img#image {
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 18px;
+}
+
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.brand-stock {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 10px;
+}
+.brand-stock .brand {
+    font-size: 1rem;
+    color: #333;
+}
+.brand-stock .stock {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.price {
+    color: #ff6600;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.buy-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.buy-row label {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.buy-row input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.add-cart-btn {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.add-cart-btn:hover {
+    background: #e67c00;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .product-detail-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 18px 4vw;
+        gap: 24px;
+    }
+    .product-images img#image {
+        width: 90vw;
+        max-width: 340px;
+        height: 340px;
+    }
+    .product-thumbs .thumb {
+        width: 70px;
+        height: 70px;
+    }
+}
+/* Footer đẹp, hiện đại */
+footer {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    padding: 48px 0 24px 0;
+    margin-top: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+}
+
+footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+footer .col {
+    flex: 1 1 260px;
+    min-width: 220px;
+    margin-bottom: 24px;
+}
+
+footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    color: #ff9800;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+
+footer ul li:hover {
+    color: #ff9800;
+}
+
+footer .col img {
+    margin-top: 12px;
+    max-width: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    background: #fff;
+    padding: 4px;
+}
+
+footer .col:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .col:last-child img {
+    margin-top: 8px;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #bbb;
+    font-size: 0.98rem;
+    margin-top: 32px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+    footer .row {
+        flex-direction: column;
+        gap: 0;
+    }
+    footer .col {
+        min-width: 0;
+        margin-bottom: 32px;
+    }
+}
